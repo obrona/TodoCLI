@@ -13,7 +13,7 @@
 
 std::unique_ptr<Node> MainNode::run() {
     while (true) {
-        std::println("Welcome to TodoCLI!");
+        std::println("\nWelcome to TodoCLI!");
         for (int i = 0; i < commands.size(); i++) {
             std::println("[{}] {}", i + 1, commands[i]);
         }
@@ -34,6 +34,7 @@ std::unique_ptr<Node> MainNode::run() {
         }
 
         if (choice == 1) {
+            std::println("");
             for (int i = 0; i < data->tasks.size(); i++) {
                 Task& t = data->tasks.get_ref_to_task(i);
                 std::println("{}. [{}] {}", i + 1, (t.is_done) ? "X" : " ", t.task);

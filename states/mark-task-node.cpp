@@ -8,7 +8,7 @@
 
 std::unique_ptr<Node> MarkTaskNode::run() {
     while (true) {
-        std::println("Input the index of the task to toggle or press [Q] to return to main menu.");
+        std::println("\nInput the index of the task to toggle or press [Q] to return to main menu.");
 
         std::string line;
         std::getline(std::cin, line);

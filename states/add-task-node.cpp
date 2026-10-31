@@ -7,7 +7,7 @@
 
 std::unique_ptr<Node> AddTaskNode::run() {
     while (true) {
-        std::println("Input the new tasks or press [Q] to go back to main menu.");
+        std::println("\nInput the new tasks or press [Q] to go back to main menu.");
 
         std::string line;
         std::getline(std::cin, line);

@@ -8,7 +8,7 @@
 
 std::unique_ptr<Node> DeleteTaskNode::run() {
     while (true) {
-        std::println("Input the index of the task you want to delete or press [Q] to go back to main menu.");
+        std::println("\nInput the index of the task you want to delete or press [Q] to go back to main menu.");
 
         std::string line;
         std::getline(std::cin, line);

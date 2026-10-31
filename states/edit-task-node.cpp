@@ -8,7 +8,7 @@
 
 std::optional<int> EditTaskNode::get_index() {
     while (true) {
-        std::println("Input the index of the task you want to edit or press [Q] to return to main menu.");
+        std::println("\nInput the index of the task you want to edit or press [Q] to return to main menu.");
 
         std::string line;
         std::getline(std::cin, line);
@@ -35,7 +35,7 @@ std::optional<int> EditTaskNode::get_index() {
 
 bool EditTaskNode::edit_task(int choice) {
     while (true) {
-        std::println("Input the new task or press [Q] to choose a different index.");
+        std::println("\nInput the new task or press [Q] to choose a different index.");
 
         std::string line;
         std::getline(std::cin, line);
